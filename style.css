@@ -1,7 +1,7 @@
-/* Roots of Hope Foundation — Part 2 external stylesheet */
+/ Roots of Hope Foundation — Part 2 external stylesheet /
 
-/* ---------- Reset and design tokens ---------- */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/ ---------- Reset and design tokens ---------- /
+, ::before, ::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --primary: #2f5d3a;
@@ -55,7 +55,7 @@ blockquote { color: var(--muted); font-family: var(--quote); font-style: italic;
 .heading-accent--center { text-align: center; }
 .heading-accent--center::after { margin-inline: auto; }
 
-/* ---------- Shared navigation ---------- */
+/ ---------- Shared navigation ---------- /
 .navbar { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; min-height: 4.75rem; padding: .65rem max(1.5rem, calc((100% - var(--container)) / 2)); background: var(--primary); color: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.16); }
 .navbar__logo a { display: block; border-radius: .25rem; }
 .navbar__logo-img { width: 3.25rem; height: 3.25rem; object-fit: contain; }
@@ -65,14 +65,14 @@ blockquote { color: var(--muted); font-family: var(--quote); font-style: italic;
 .navbar__links a:hover, .navbar__links a.active { background: rgba(255,255,255,.16); color: #ffe0b8; }
 .navbar__toggle { display: none; padding: .4rem .65rem; border: 1px solid rgba(255,255,255,.55); border-radius: .25rem; color: #fff; font-size: 1.75rem; line-height: 1; }
 
-/* ---------- Page routing ---------- */
+/ ---------- Page routing ---------- /
 .page { display: none; overflow: hidden; }
 .page.active { display: block; }
 .page-hero { padding: clamp(3.5rem, 8vw, 6rem) 1.5rem; background: linear-gradient(135deg, var(--primary), #467a4c); color: #fff; text-align: center; }
 .page-hero h1, .page-hero h2 { color: #fff; }
 .page-hero p { max-width: 48rem; margin: 1rem auto 0; color: #f8f5ec; font-size: 1.15rem; }
 
-/* ---------- Home hero and sections ---------- */
+/ ---------- Home hero and sections ---------- /
 .hero { position: relative; display: grid; min-height: clamp(32rem, 72vh, 48rem); place-items: center; padding: 5rem 1.5rem; background: linear-gradient(90deg, rgba(20,49,27,.88), rgba(47,93,58,.56)), var(--hero-image, linear-gradient(135deg, #467a4c, #b4c77e)); background-position: center; background-size: cover; color: #fff; }
 .hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; }
 .hero__content { width: min(100%, 52rem); text-align: center; }
@@ -90,7 +90,7 @@ blockquote { color: var(--muted); font-family: var(--quote); font-style: italic;
 .home-programmes__header, .maps-section__header { margin-bottom: 2rem; text-align: center; }
 .home-programmes__header p, .maps-section__header p { max-width: 42rem; margin-inline: auto; }
 
-/* ---------- Buttons ---------- */
+/ ---------- Buttons ---------- /
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 2.9rem; padding: .75rem 1.25rem; border: 2px solid transparent; border-radius: var(--radius); font-family: var(--heading); font-size: .875rem; font-weight: 700; letter-spacing: .03em; text-align: center; transition: transform .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease; }
 .btn:hover { transform: translateY(-2px); }
 .btn--green, .btn--primary { background: var(--primary); color: #fff; }
@@ -99,7 +99,7 @@ blockquote { color: var(--muted); font-family: var(--quote); font-style: italic;
 .hero .btn--outline, .cta-banner .btn--outline { border-color: #fff; color: #fff; }
 .btn--outline:hover { background: var(--primary); color: #fff; }
 
-/* ---------- Cards, grids and statistics ---------- */
+/ ---------- Cards, grids and statistics ---------- /
 .card, .prog-card, .team-card, .why-card, .mv-card, .map-card, .contact-info, .contact-form-box, .enquiry-form-box { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow-sm); }
 .prog-grid, .team-grid, .mv-grid, .enquiry-why__grid, .maps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .prog-card, .team-card, .why-card, .mv-card, .map-card { overflow: hidden; transition: transform .2s ease, box-shadow .2s ease; }
@@ -121,7 +121,7 @@ blockquote { color: var(--muted); font-family: var(--quote); font-style: italic;
 .cta-banner h2 { color: var(--primary-dark); }
 .cta-banner p { max-width: 42rem; margin: 1rem auto 1.5rem; }
 
-/* ---------- About page ---------- */
+/ ---------- About page ---------- /
 .history { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 3rem; max-width: var(--container); margin-inline: auto; }
 .history__content p:last-child { margin-bottom: 0; }
 .history__image img { width: 100%; max-height: 26rem; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow-md); }
@@ -135,7 +135,7 @@ blockquote { color: var(--muted); font-family: var(--quote); font-style: italic;
 .team-card__photo { height: 15rem; }
 .team-card__role { display: block; margin-bottom: .75rem; color: var(--accent-dark); font-size: .875rem; font-weight: 600; }
 
-/* ---------- Programmes page ---------- */
+/ ---------- Programmes page ---------- /
 .prog-detail:nth-of-type(even), .prog-detail--alt { background: var(--bg-alt); }
 .prog-detail__inner { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 3rem; max-width: var(--container); margin-inline: auto; }
 .prog-detail__content { max-width: 40rem; }
@@ -145,7 +145,7 @@ blockquote { color: var(--muted); font-family: var(--quote); font-style: italic;
 .prog-stats { background: var(--primary-dark); color: #fff; }
 .prog-stats h2 { color: #fff; text-align: center; margin-bottom: 2rem; }
 
-/* ---------- Enquiry and contact forms ---------- */
+/ ---------- Enquiry and contact forms ---------- /
 .enquiry-why { background: var(--bg-alt); }
 .enquiry-why > h2, .enquiry-section > h2 { margin-bottom: 2rem; text-align: center; }
 .why-card { padding: 1.5rem; text-align: center; }
@@ -165,7 +165,7 @@ blockquote { color: var(--muted); font-family: var(--quote); font-style: italic;
 .conditional-fields { display: none; margin: 1rem 0; padding: 1rem; border-left: 4px solid var(--accent); background: var(--bg-alt); }
 .form-submit { margin-top: 1.5rem; }
 
-/* ---------- Contact and maps ---------- */
+/ ---------- Contact and maps ---------- /
 .contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 2rem; max-width: var(--container); margin-inline: auto; background: var(--bg-alt); }
 .contact-info { padding: 1.5rem; }
 .contact-info h2 { margin-bottom: 1.5rem; font-size: 1.75rem; }
@@ -183,7 +183,7 @@ blockquote { color: var(--muted); font-family: var(--quote); font-style: italic;
 .map-card__info { padding: 1.25rem; }
 .map-card__info p { margin-bottom: 0; font-size: .875rem; }
 
-/* ---------- Footer and accessibility ---------- */
+/ ---------- Footer and accessibility ---------- /
 .footer { padding: 2.5rem 1.5rem; background: var(--primary-dark); color: #fff; text-align: center; }
 .footer__links { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 1.25rem; margin-bottom: 1rem; }
 .footer__links a { font-size: .875rem; }
@@ -191,14 +191,14 @@ blockquote { color: var(--muted); font-family: var(--quote); font-style: italic;
 .footer__copy { max-width: 52rem; margin: 0 auto; color: #e9e4d8; font-size: .875rem; }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 
-/* ---------- Tablet ---------- */
+/ ---------- Tablet ---------- /
 @media (max-width: 64rem) {
   .navbar { padding-inline: 1.5rem; }
   .prog-grid, .team-grid, .enquiry-why__grid { grid-template-columns: repeat(2, 1fr); }
   .stats__grid, .prog-stats__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ---------- Mobile ---------- */
+/ ---------- Mobile ---------- /
 @media (max-width: 48rem) {
   .container { width: min(100% - 2rem, var(--container)); }
   .navbar { min-height: 4.25rem; }
@@ -218,7 +218,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+  , ::before, ::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
 
 @media print {
